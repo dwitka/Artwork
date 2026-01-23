@@ -2583,20 +2583,20 @@ input, select, textarea {
 	}
 
 		.tiles article {
-			-moz-transition: -moz-transform 0.5s ease, opacity 0.5s ease;
-			-webkit-transition: -webkit-transform 0.5s ease, opacity 0.5s ease;
-			-ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease;
-			transition: transform 0.5s ease, opacity 0.5s ease;
+			-moz-transition: -moz-transform 1.0s ease, opacity 1.0s ease;
+			-webkit-transition: -webkit-transform 1.0s ease, opacity 1.0s ease;
+			-ms-transition: -ms-transform 1.0s ease, opacity 1.0s ease;
+			transition: transform 1.0s ease, opacity 1.0s ease;
 			position: relative;
 			width: calc(33.33333% - 2.5em);
 			margin: 2.5em 0 0 2.5em;
 		}
 
 			.tiles article > .image {
-				-moz-transition: -moz-transform 0.5s ease;
-				-webkit-transition: -webkit-transform 0.5s ease;
-				-ms-transition: -ms-transform 0.5s ease;
-				transition: transform 0.5s ease;
+				-moz-transition: -moz-transform 1.0s ease;
+				-webkit-transition: -webkit-transform 1.0s ease;
+				-ms-transition: -ms-transform 1.0s ease;
+				transition: transform 1.0s ease;
 				position: relative;
 				display: block;
 				width: 100%;
