@@ -6,6 +6,18 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* Hide content until page loads */
+			body {
+				opacity: 0;
+				visibility: hidden;
+				transition: opacity 0.3s ease;
+			}
+			body.loaded {
+				opacity: 1;
+				visibility: visible;
+			}
+		</style>
 	</head>
 	<!-- <body class="is-preload"> -->
 	<body>
@@ -377,6 +389,18 @@
 			</div>
 
 		<!-- Scripts -->
+			<script>
+			// Show content when page fully loads
+			window.addEventListener('load', function() {
+				document.body.classList.add('loaded');
+			});
+			
+			// Fallback - show content if load takes too long
+			setTimeout(function() {
+				document.body.classList.add('loaded');
+			}, 10000);
+			</script>
+		
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
