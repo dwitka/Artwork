@@ -11,7 +11,7 @@
 			body {
 				opacity: 0;
 				visibility: hidden;
-				transition: opacity 1.5s ease-in-out;
+				transition: opacity 2.0s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 			}
 			body.loaded {
 				opacity: 1;
@@ -20,7 +20,7 @@
 			/* Optional: Add fade-out effect before page unloads */
 			body.fade-out {
 				opacity: 0 !important;
-				transition: opacity 1.5s ease !important;
+				transition: opacity 2.0s ease !important;
 			}
 		</style>
 	</head>
